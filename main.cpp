@@ -10,8 +10,8 @@ struct student {
     int eng;
     int math;
     int phys;
+    
 };
-
 int main() {
     struct student students[2];
     int i;
@@ -35,8 +35,13 @@ int main() {
     }
         float  x;
         char grade;
-        x = (students[i].eng + students[i].math + students[i].phys) / 3;
-
+    for (int i = 0; i<2; i++) {
+             if (strcmp( ten_nhap_vao, students[i].name) == 0) {
+                     //Tính điểm và in grade
+              }
+    
+           x = (students[i].eng + students[i].math + students[i].phys) / 3;
+    
         if (x >= 90 && x <= 100) {
             grade = 'S';
         } else if (x >= 80 && x < 90) {
@@ -53,4 +58,6 @@ int main() {
 
         return 0;
     }
+             
+             }
 
